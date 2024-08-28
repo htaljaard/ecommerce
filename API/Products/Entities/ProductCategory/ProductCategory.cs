@@ -1,3 +1,9 @@
-namespace Products.Entities;
+using SharedKernel.Entities;
 
-public record ProductCategory(string CategoryName, string Description, Guid CategoryId);
+namespace Products.Entities;
+public class ProductCategory(string categoryName, string description) : Entity
+{
+    public string CategoryName { get; set; } = categoryName;
+    public string Description { get; set; } = description;
+
+}

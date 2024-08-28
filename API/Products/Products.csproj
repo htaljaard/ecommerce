@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Database\" />
-    <Folder Include="Entities\ProductCategory\Exceptions\" />
+    <Folder Include="DependencyInjection\" />
     <Folder Include="Features\CreateProduct\" />
     <Folder Include="Features\GetAllProductCategories\" />
+    <Folder Include="Tests\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +21,7 @@
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.4.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
   </ItemGroup>
 
 </Project>
